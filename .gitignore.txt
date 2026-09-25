@@ -1,0 +1,77 @@
+# ==========================================
+# 1. SECURITY & SECRETS (CRITICAL)
+# ==========================================
+# Exclude all API keys, local environment variables, and Streamlit secrets
+.env
+.venv
+secrets.toml
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# ==========================================
+# 2. PYTHON BYTECODE & CACHE ARTIFACTS
+# ==========================================
+# Compiled Python files and execution caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# ==========================================
+# 3. VIRTUAL ENVIRONMENTS
+# ==========================================
+# Local development virtual environments (can be hundreds of MBs)
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# 4. BUILD & EXECUTABLE ARTIFACTS
+# ==========================================
+# Output folders from PyInstaller, Nuitka, cx_Freeze, or setuptools
+build/
+dist/
+*.spec
+*.exe
+*.app
+*.dmg
+*.msi
+*.egg-info/
+.eggs/
+
+# ==========================================
+# 5. IDE & OS-SPECIFIC FILES
+# ==========================================
+# macOS clutter
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows clutter
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# VS Code & JetBrains / PyCharm settings
+.vscode/
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# 6. LOCAL DATA & USER CONFIGURATIONS
+# ==========================================
+# Prevent committing local user databases or saved state test files
+*.db
+*.sqlite3
+*.log
+local_user_data/
+temp/
